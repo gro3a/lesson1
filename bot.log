@@ -1,0 +1,15 @@
+telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/telegram/ext/commandhandler.py", line 171, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 9, in greet_user
+    print(1/0)
+ZeroDivisionError: division by zero
+telegram.ext.updater - WARNING - Exiting immediately!
+root - INFO - Привет
+telegram.ext.updater - WARNING - Exiting immediately!
+root - INFO - чмоки всем в этом чате
+root - INFO - Я тебя люблю
+telegram.ext.updater - WARNING - Exiting immediately!
